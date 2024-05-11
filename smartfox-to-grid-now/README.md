@@ -1,4 +1,4 @@
-# Smartfox sensor
+# Example Sensor
 
 This is a minimum implementation of an integration providing a sensor measurement.
 
@@ -11,8 +11,5 @@ Add the following to your `configuration.yaml` file:
 ```yaml
 # Example configuration.yaml entry
 sensor:
-  - platform: smartfox_production_now
-  - platform: smartfox_production_daily
-  - platform: smartfox_to_grid_daily
   - platform: smartfox_to_grid_now
 ```

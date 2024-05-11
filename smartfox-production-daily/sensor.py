@@ -21,13 +21,13 @@ def setup_platform(
     discovery_info: DiscoveryInfoType | None = None
 ) -> None:
     """Set up the sensor platform."""
-    add_entities([ProductionSolarSensor()])
+    add_entities([ProductionDailySolarSensor()])
 
 
-class ProductionSolarSensor(SensorEntity):
+class ProductionDailySolarSensor(SensorEntity):
     """Representation of a Sensor."""
 
-    _attr_name = "Production Solar Sensor"
+    _attr_name = "Production Solar Sensor Daily"
     _attr_native_unit_of_measurement = UnitOfPower.KILO_WATT_HOUR
     _attr_device_class = SensorDeviceClass.POWER
     _attr_state_class = SensorStateClass.MEASUREMENT

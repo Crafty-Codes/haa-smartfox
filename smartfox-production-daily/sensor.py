@@ -29,8 +29,8 @@ class ProductionDailySolarSensor(SensorEntity):
 
     _attr_name = "Production Solar Sensor Daily"
     _attr_native_unit_of_measurement = UnitOfEnergy.KILO_WATT_HOUR
-    _attr_device_class = SensorDeviceClass.POWER
-    _attr_state_class = SensorStateClass.MEASUREMENT
+    _attr_device_class = SensorDeviceClass.ENERGY
+    _attr_state_class = SensorStateClass.TOTAL
 
     def update(self) -> None:
         """Fetch new state data for the sensor.
